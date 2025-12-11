@@ -72,8 +72,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              We build intelligent tools and infrastructure to help humans
-              and AI work in tandem, streamlining workflows and enhancing
+              We build intelligent tools and infrastructure to help humans and
+              AI work in tandem, streamlining workflows and enhancing
               collaboration across teams.
             </p>
 
