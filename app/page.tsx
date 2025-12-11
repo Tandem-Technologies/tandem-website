@@ -73,7 +73,7 @@ export default function Home() {
 
             <p className="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
               We build intelligent tools and infrastructure to help humans and
-              AI work in tandem, streamlining workflows and enhancing
+              AI work in <b>tandem</b>, streamlining workflows and enhancing
               collaboration across teams.
             </p>
 
@@ -186,10 +186,10 @@ export default function Home() {
                 <div>
                   <p className="text-sm text-neutral-400">Email us at</p>
                   <a
-                    href="mailto:hello@tandem.tech"
+                    href="mailto:team@tandem-tech.co.uk"
                     className="text-lg font-medium text-white hover:text-neutral-300 transition-colors duration-200"
                   >
-                    hello@tandem.tech
+                    team@tandem-tech.co.uk
                   </a>
                 </div>
               </div>
