@@ -218,7 +218,7 @@ export default function Home() {
 
           {/* Right */}
           <div className="flex items-center gap-6">
-            <a
+            {/* <a
               href="#"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -229,7 +229,7 @@ export default function Home() {
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms
-            </a>
+            </a> */}
             <a
               href="mailto:team@tandem-tech.co.uk"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
