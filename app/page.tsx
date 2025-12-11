@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [stars, setStars] = useState<
@@ -29,6 +30,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <Navbar />
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Effects */}
@@ -61,10 +64,6 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="space-y-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-neutral-400 font-medium">
-              Tandem Technologies
-            </p>
-
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
               Enabling seamless collaboration between{" "}
               <span className="bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
@@ -73,7 +72,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              Tandem builds intelligent tools and infrastructure that let humans
+              We build intelligent tools and infrastructure to help humans
               and AI work in tandem, streamlining workflows and enhancing
               collaboration across teams.
             </p>
@@ -151,6 +150,50 @@ export default function Home() {
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="relative py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
+            Contact Us
+          </h2>
+          <p className="text-lg text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
+            Interested in learning more about our products or partnering with
+            us? We'd love to hear from you.
+          </p>
+
+          <div className="card-glow rounded-2xl p-8 md:p-10">
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-neutral-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm text-neutral-400">Email us at</p>
+                  <a
+                    href="mailto:hello@tandem.tech"
+                    className="text-lg font-medium text-white hover:text-neutral-300 transition-colors duration-200"
+                  >
+                    hello@tandem.tech
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
