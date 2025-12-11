@@ -1,9 +1,11 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [stars, setStars] = useState<Array<{ id: number; left: string; top: string; delay: string }>>([]);
+  const [stars, setStars] = useState<
+    Array<{ id: number; left: string; top: string; delay: string }>
+  >([]);
 
   useEffect(() => {
     // Generate random stars for the starfield
@@ -17,9 +19,9 @@ export default function Home() {
   }, []);
 
   const scrollToProducts = () => {
-    const productsSection = document.getElementById('products');
+    const productsSection = document.getElementById("products");
     if (productsSection) {
-      productsSection.scrollIntoView({ behavior: 'smooth' });
+      productsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -31,7 +33,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-radial from-neutral-900/50 via-background to-background" />
-        
+
         {/* Starfield */}
         <div className="starfield">
           {stars.map((star) => (
@@ -48,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Shooting Star */}
-        <div className="shooting-star" style={{ top: '20%', left: '10%' }} />
+        <div className="shooting-star" style={{ top: "20%", left: "10%" }} />
 
         {/* Binary Stars */}
         <div className="binary-stars">
@@ -62,19 +64,20 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400 font-medium">
               Tandem Technologies
             </p>
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
-              Enabling seamless collaboration between{' '}
+              Enabling seamless collaboration between{" "}
               <span className="bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                 humans and AI
               </span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              Tandem builds intelligent tools and infrastructure that let humans and AI work in tandem,
-              streamlining workflows and enhancing collaboration across teams.
+              Tandem builds intelligent tools and infrastructure that let humans
+              and AI work in tandem, streamlining workflows and enhancing
+              collaboration across teams.
             </p>
-            
+
             <div className="pt-4">
               <button
                 onClick={scrollToProducts}
@@ -111,7 +114,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Our Products
           </h2>
-          
+
           <div className="max-w-2xl mx-auto">
             <a
               href="https://tana.tandem.tech"
@@ -125,8 +128,9 @@ export default function Home() {
                     Tana
                   </h3>
                   <p className="text-lg text-neutral-300 leading-relaxed mb-6">
-                    Tana is our intelligent voice and workflow agent, designed to streamline operations
-                    and enhance the way teams interact with AI.
+                    Tana is our intelligent voice and workflow agent, designed
+                    to streamline operations and enhance the way teams interact
+                    with AI.
                   </p>
                   <div className="flex items-center gap-2 text-neutral-400 group-hover:text-white transition-colors duration-300">
                     <span className="text-sm font-medium">View product</span>
@@ -163,15 +167,24 @@ export default function Home() {
                 Building tools for humans and AI to work in tandem.
               </p>
             </div>
-            
+
             <div className="flex gap-6 text-xs text-neutral-500">
-              <a href="#" className="hover:text-neutral-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-neutral-300 transition-colors duration-200"
+              >
                 Privacy
               </a>
-              <a href="#" className="hover:text-neutral-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-neutral-300 transition-colors duration-200"
+              >
                 Terms
               </a>
-              <a href="#" className="hover:text-neutral-300 transition-colors duration-200">
+              <a
+                href="#"
+                className="hover:text-neutral-300 transition-colors duration-200"
+              >
                 Contact
               </a>
             </div>

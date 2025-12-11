@@ -9,8 +9,10 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tandem Technologies - Enabling seamless collaboration between humans and AI",
-  description: "Tandem builds intelligent tools and infrastructure that let humans and AI work in tandem.",
+  title:
+    "Tandem Technologies - Enabling seamless collaboration between humans and AI",
+  description:
+    "Tandem builds intelligent tools and infrastructure that let humans and AI work in tandem.",
   keywords: ["AI", "collaboration", "technology", "automation", "workflow"],
 };
 
@@ -21,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instrumentSans.variable} font-sans`}>
-        {children}
-      </body>
+      <body className={`${instrumentSans.variable} font-sans`}>{children}</body>
     </html>
   );
 }
